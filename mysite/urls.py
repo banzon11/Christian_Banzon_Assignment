@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from polls.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls'))
+    path('polls/', include('polls.urls')),
+    path('try/',PostViewSet.as_view(), name='api-lead-insert')
 ]
