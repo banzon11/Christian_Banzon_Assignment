@@ -26,5 +26,5 @@ djangorestframework-simplejwt==4.6.0
 django-cors-headers==3.10.0
 
 PyJWT==1.7.1
-
+waitress==2.0.0
 django-heroku

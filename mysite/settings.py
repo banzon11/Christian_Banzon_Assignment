@@ -29,6 +29,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [ '0.0.0.0'
     'christianassignment.herokuapp.com',
+    'https://christianassignment.herokuapp.com/',
+    'christianassignment.herokuapp.com/',
+    'http://christianassignment.herokuapp.com/'
     '127.0.0.1']
 
 
