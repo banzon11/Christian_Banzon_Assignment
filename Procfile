@@ -1,1 +1,1 @@
-web: python website/manage.py runserver 0.0.0.0:$PORT
+web: python Christian_Banzon_Assignment/manage.py runserver 0.0.0.0:$PORT                                                                                                                       
