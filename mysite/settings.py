@@ -25,9 +25,12 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 '_wphl^1bl5fgr0dlit3eo*^7yp8^a99ys&_w8_@wdsj0_1bs@g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [ '0.0.0.0'
+ALLOWED_HOSTS = [ '0.0.0.0',
+    'localhost:8000',
+    'localhost',
+    '.herokuapp.com'
     'christianassignment.herokuapp.com',
     'https://christianassignment.herokuapp.com/',
     'christianassignment.herokuapp.com/',

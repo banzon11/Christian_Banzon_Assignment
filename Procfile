@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 mysite.wsgi:application
+web: python manage.py runserver localhost:8000
