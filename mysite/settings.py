@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '_wphl^1bl5fgr0dlit3eo*^7yp8^a99ys&_w8_@wdsj0_1bs@g'
+SECRET_KEY = config('DJANGO_SECRET_KEY')
+'_wphl^1bl5fgr0dlit3eo*^7yp8^a99ys&_w8_@wdsj0_1bs@g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
     'polls'
 ]
 
@@ -113,7 +117,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
+TOKEN_URL = config('TOKEN_URL', default=None)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
