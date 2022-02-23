@@ -1,1 +1,1 @@
-web: gunicorn Christian_Banzon_Assignment.wsgi --log-file -
+web: gunicorn mysite.wsgi --log-file -
