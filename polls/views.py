@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from msrest import Serializer
 from rest_framework.views import APIView
 from polls.models import *
 from rest_framework.response import Response
